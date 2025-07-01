@@ -1,0 +1,53 @@
+.achievements {
+  background-color: #D6CCC2;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #897C80;
+  margin-bottom: 2rem;
+}
+
+.achieve-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.achieve-card {
+  background-color: #F5EBE0;
+  padding: 1.5rem;
+  width: 260px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #333;
+}
+
+.achieve-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.achieve-card h3 {
+  font-size: 1.2rem;
+  color: #BA8F95;
+  margin-bottom: 0.5rem;
+}
+
+.achieve-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .achieve-card {
+    width: 90%;
+  }
+}

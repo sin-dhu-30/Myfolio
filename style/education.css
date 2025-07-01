@@ -1,0 +1,89 @@
+.education {
+  background-color: #E3D5CA;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #897C80;
+  margin-bottom: 2rem;
+}
+
+.edu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  animation: fadeInCards 1.2s ease-in;
+}
+
+.edu-card {
+  background-color: #F5EBE0;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+  width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.edu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+.edu-card h3 {
+  font-size: 1.4rem;
+  color: #BA8F95;
+  margin-bottom: 0.5rem;
+}
+
+.edu-location {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.edu-duration {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.edu-grade {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #897C80;
+  margin-bottom: 0.8rem;
+}
+
+.edu-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Animation */
+@keyframes fadeInCards {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .edu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .edu-card {
+    width: 90%;
+  }
+}
